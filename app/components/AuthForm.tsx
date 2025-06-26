@@ -74,7 +74,7 @@ const AuthForm = ({ type }: {type: FormType}) => {
             <FormField control={form.control}
                         name = "email"
                         label = "Email"
-                        placeholder='Your mail address'
+                        placeholder='Your email address'
                         type='email' />
             <FormField control={form.control}
                         name = "password"
