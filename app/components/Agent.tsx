@@ -121,7 +121,7 @@ const Agent = ({ userName, userId, type }: AgentProps) => {
 
                 <div className='card-border'>
                     <div className='card-content'>
-                        <Image src="/user-avatar.png" alt="user avatar" width={540} height={540} className='rounded-full object-cover size-[120px]' />
+                        <Image src="/image1.jpeg" alt="user avatar" width={540} height={540} className='rounded-full object-cover size-[120px]' />
                         <h3>{userName}</h3>
                     </div>
                 </div>
