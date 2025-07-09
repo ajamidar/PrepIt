@@ -144,8 +144,11 @@
   p {
     @apply text-light-100;
   }
+  h1{
+    @apply text-5xl font-bold;
+  }
   h2 {
-    @apply text-4xl font-semibold;
+    @apply text-4xl font-bold;
   }
   h3 {
     @apply text-2xl font-semibold;
@@ -262,7 +265,7 @@
   }
 
   .root-layout {
-    @apply flex mx-auto max-w-7xl flex-col gap-4 my-0 px-16 max-sm:px-4 max-sm:my-8;
+    @apply flex mx-auto max-w-7xl flex-col gap-2 my-0 px-16 max-sm:px-4 max-sm:my-8;
   }
 
   .card-cta {
@@ -360,7 +363,7 @@
 
 @layer utilities {
   .pattern {
-    @apply bg-[url('/pattern.jpg')] bg-top bg-no-repeat;
+    @apply bg-[url('/pattern.jpg')] bg-repeat;
     animation: subtlePulse 10s ease-in-out infinite;
   }
 }
