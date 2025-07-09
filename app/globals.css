@@ -24,7 +24,7 @@
 
   --font-mona-sans: "Mona Sans", sans-serif;
 
-  --bg-pattern: url("/pattern.png");
+  --bg-pattern: url("/pattern.jpg");
 }
 
 :root {
@@ -145,7 +145,7 @@
     @apply text-light-100;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-4xl font-semibold;
   }
   h3 {
     @apply text-2xl font-semibold;
@@ -210,14 +210,14 @@
   }
 
   .call-view {
-    @apply flex sm:flex-row flex-col gap-10 items-center justify-between w-full;
+    @apply flex sm:flex-row flex-col gap-5 items-center justify-between w-full;
 
     h3 {
       @apply text-center text-primary-100 mt-5;
     }
 
     .card-interviewer {
-      @apply flex-center flex-col gap-2 p-7 h-[400px] blue-gradient-dark rounded-lg border-2 border-primary-200/50 flex-1 sm:basis-1/2 w-full;
+      @apply flex-center flex-col gap-2 p-7 h-[320px] blue-gradient-dark rounded-lg border-2 border-primary-200/50 flex-1 sm:basis-1/2 w-full;
     }
 
     .avatar {
@@ -229,7 +229,7 @@
     }
 
     .card-border {
-      @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[400px] max-md:hidden;
+      @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px] max-md:hidden;
     }
 
     .card-content {
@@ -262,11 +262,15 @@
   }
 
   .root-layout {
-    @apply flex mx-auto max-w-7xl flex-col gap-12 my-12 px-16 max-sm:px-4 max-sm:my-8;
+    @apply flex mx-auto max-w-7xl flex-col gap-4 my-0 px-16 max-sm:px-4 max-sm:my-8;
   }
 
   .card-cta {
     @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-6 items-center justify-between max-sm:px-4;
+  }
+
+  .card-cta{
+    transition: 0.3s ease;
   }
 
   .interviews-section {
@@ -292,6 +296,31 @@
       @apply text-sm font-semibold capitalize;
     }
   }
+
+  .card-interview{
+    transition: 0.3s ease;
+  }
+
+  .card-cta:hover{
+    transform: scale(1.03);
+  }
+
+  .card-interview:hover{
+    transform: scale(1.03);
+  }
+
+  .interview-page-header{
+    transition: 0.3s ease;
+    @apply px-4
+  }
+
+  .interview-page-header:hover{
+    transform: scale(1.01);
+  }
+
+  nav{
+    @apply  px-4 py-10 w-full
+  }
 }
 
 @utility dark-gradient {
@@ -300,10 +329,6 @@
 
 @utility border-gradient {
   @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
-}
-
-@utility pattern {
-  @apply bg-[url('/pattern.png')] bg-top bg-no-repeat;
 }
 
 @utility blue-gradient-dark {
@@ -332,3 +357,26 @@
     transform: translateY(0);
   }
 }
+
+@layer utilities {
+  .pattern {
+    @apply bg-[url('/pattern.jpg')] bg-top bg-no-repeat;
+    animation: subtlePulse 10s ease-in-out infinite;
+  }
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    background-size: 100%;
+  }
+  25% {
+    background-size: 102%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  75% {
+    background-size: 102%;
+  }
+}
+

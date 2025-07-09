@@ -138,7 +138,7 @@ const Agent = ({ userName, userId, type }: AgentProps) => {
                 </div>
             )}
 
-            <div className='w-full flex justify-center'>
+            <div className='w-full flex justify-center py-2'>
                 {callStatus != 'ACTIVE' ? (
                     <button className='relative btn-call' onClick={handleCall}>
                         <span className={cn('absolute animate-ping rounded-full opacity-75', callStatus != 'CONNECTING' &&'hidden')}/>
