@@ -20,6 +20,7 @@ export async function POST(request: Request) {
                     The questions are going to be read by a voice assistant so do not use "/" or "*" or any other special characters which might break the voice assistant.
                     Return the questions formatted like this:
                     ["Question 1", "Question 2", "Question 3"]
+                    Try to make the difficulty level similar to that of LeetCode's questions.
                     
                     Thank you! <3`,
         });
