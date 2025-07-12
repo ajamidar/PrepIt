@@ -22,7 +22,7 @@ const SmallScreenSlideShow = () => {
   }, [])
 
   return (
-    <div className="relative w-[500px] h-[380px] max-w-full max-h-full rounded-xl overflow-hidden shadow-lg bg-[#8f8d8d] min-sm:hidden">
+    <div className="relative w-[400px] h-[280px] max-w-full max-h-full rounded-xl overflow-hidden shadow-lg bg-[#8f8d8d] min-sm:hidden">
       {images.map((src, index) => (
         <Image
           key={index}
