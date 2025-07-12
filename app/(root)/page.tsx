@@ -14,7 +14,7 @@ const page = () => {
           <div className='flex flex-col gap-1 max-w-lg'>
             <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
             <p className='text-lg text-neutral-950'>
-              Lets help us prepare you like the million others. 
+              Let us help prepare you like the million others. 
             </p>
           </div>
         
