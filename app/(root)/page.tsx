@@ -25,7 +25,7 @@ const page = () => {
           </div>
       </div>
     
-      <Image src="/root-logo2.png" alt='robot' width={400} height={400} className='max-sm:hidden root-logo-pic' />
+      <Image src="/root-logo2.png" alt='robot' width={420} height={420} className='max-sm:hidden root-logo-pic' />
     </section>
 
     <section className='flex flex-col gap-6 mt-8'>

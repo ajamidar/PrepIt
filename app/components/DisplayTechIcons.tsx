@@ -6,7 +6,7 @@ const DisplayTechIcons = async ({ techStack }: TechIconProps) => {
     const techIcons = await getTechLogos(techStack)
     return (
         <div className='flex flex-row gap-0.5'>{techIcons.slice(0,3).map(({ tech , url}, index) => (
-            <div key={tech} className='relative group bg-[#6d6d6d] rounded-full px-3 flex-center'>
+            <div key={tech} className='relative group bg-[#6d6d6d] rounded-full px-3 flex-center hover:!bg-[#5c5c5c]'>
                 <span className='tech-tooltip'>{tech}</span>
                 <Image src={url} alt={tech} width={90} height={90} className="size-5" />
             </div>

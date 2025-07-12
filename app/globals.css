@@ -277,7 +277,7 @@
   }
 
   .card-cta {
-    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-2 items-center justify-between max-sm:px-4;
+    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-2 items-center justify-between max-sm:px-5 max-sm:py-5;
   }
 
   .card-cta{
@@ -330,7 +330,7 @@
   }
 
   nav{
-    @apply  px-4 py-10 w-full
+    @apply  px-4 py-8 w-full
   }
 
   .link{
@@ -350,7 +350,7 @@
   }
 
   .root-logo-pic{
-    @apply size-[350px];
+    @apply size-[370px];
   }
 
   .under-root-logo{
@@ -413,13 +413,13 @@
     background-size: 100%;
   }
   25% {
-    background-size: 102%;
+    background-size: 103%;
   }
   50% {
     background-size: 100%;
   }
   75% {
-    background-size: 102%;
+    background-size: 103%;
   }
 }
 
