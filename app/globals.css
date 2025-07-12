@@ -181,7 +181,7 @@
   }
 
   .btn-int-card{
-    @apply w-fit !bg-[#d4d4d1] !text-black hover:!bg-[#ababaa] !rounded-full !font-bold px-7 cursor-pointer min-h-15 min-w-2
+    @apply w-fit !bg-[#d4d4d1] !text-black hover:!bg-[#ababaa] !rounded-full !font-bold px-7 cursor-pointer min-h-13 min-w-2
   }
 
   .btn-secondary {
