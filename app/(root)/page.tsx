@@ -30,7 +30,7 @@ const page = () => {
     
       <Slideshow />
     </section>
-    <div className='flex flex-col min-sm:hidden py-4'>
+    <div className='flex flex-col min-sm:hidden py-6'>
       <h2>Some reviews...</h2>
       <SmallScreenSlideShow />
     </div>
