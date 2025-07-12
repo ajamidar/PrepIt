@@ -91,12 +91,12 @@ const AuthForm = ({ type }: {type: FormType}) => {
 
   return (
     <div className='card-border lg:min-w-[566px]'>
-      <div className='flex flex-col gap-7 card py-14 px-10'>
+      <div className='flex flex-col gap-6.5 card py-14 px-10'>
         <div className='flex flex-row gap-1 justify-center'>
-          <Image src="/logo.svg" alt="logo" height={38} width={38} />
-          <h2 className='text-primary-100'>PrepIt</h2>
+          <Image src="/logo4.svg" alt="logo" height={50} width={48} />
+          <h1 className='text-black'>PrepIt</h1>
         </div>
-        <h3>Practice job interviews with AI</h3>
+        <h3 className='text-black'>Practice job interviews with AI</h3>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-7 mt-4 form">
             {!isSignIn && (
@@ -105,7 +105,7 @@ const AuthForm = ({ type }: {type: FormType}) => {
                         label = "Name"
                         placeholder='Your Name' />
             )}
-            <FormField control={form.control}
+            <FormField  control={form.control}
                         name = "email"
                         label = "Email"
                         placeholder='Your email address'
@@ -119,9 +119,9 @@ const AuthForm = ({ type }: {type: FormType}) => {
           </form>
         </Form>
 
-        <p className='text-center'>
+        <p className='text-center text-black'>
           {isSignIn ? "No account yet?" : "Have an account already?"}
-          <Link href={!isSignIn ? '/sign-in' : '/sign-up'} className='font-bold text-user-primary ml-1'>
+          <Link href={!isSignIn ? '/sign-in' : '/sign-up'} className='font-bold hover:!text-[#333333] text-user-primary ml-1'>
             {!isSignIn ? "Sign in" : "Sign up"}
           </Link>
         </p>
