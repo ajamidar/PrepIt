@@ -269,7 +269,7 @@
   }
 
   .card-cta {
-    @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-6 items-center justify-between max-sm:px-4;
+    @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-2 items-center justify-between max-sm:px-4;
   }
 
   .card-cta{
@@ -330,7 +330,19 @@
   }
 
   .link:hover{
-    transform: scale(1.025);
+    transform: scale(1.01);
+  }
+
+  .prep-it{
+    @apply text-primary-100;
+  }
+
+  .prep-it:hover{
+    @apply text-primary-200;
+  }
+
+  .root-logo-pic{
+    @apply size-[350px];
   }
 }
 

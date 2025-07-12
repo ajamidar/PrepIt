@@ -11,17 +11,17 @@ const page = () => {
     <>
     <section className='card-cta'>
       <div className='flex flex-col gap-6 max-w-lg'>
-        <h2>Interview? Ace it with AI.</h2>
+        <h2>HAVE AN INTERVIEW?</h2>
         <p className='text-lg'>
-          Practice real interview questions with AI-Powered personalisation & get instant assessment 
+          Lets help us prepare you like the million others. 
         </p>
 
         <Button asChild className='btn-primary max-sm:w-full'>
-          <Link href="/interview">Start an interview</Link>
+          <Link href="/interview">Generate a Mock Interview</Link>
         </Button>
       </div>
-
-      <Image src="/robot.png" alt='robot' width={400} height={400} className='max-sm:hidden' />
+    
+      <Image src="/root-logo.png" alt='robot' width={400} height={400} className='max-sm:hidden root-logo-pic' />
     </section>
 
     <section className='flex flex-col gap-6 mt-8'>
