@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="30" fill="#e1ca6f"/>
+  <g transform="translate(30, 30)">
+    <!-- Enlarged speech bubble -->
+    <path d="M30 60C30 40 50 25 70 25C90 25 110 40 110 60C110 80 90 95 70 95C64 95 58 93 54 90L36 97L40 78C33 74 30 67 30 60Z" 
+          fill="#2B60DE"/>
+
+    <!-- Brain-shaped neural network (shifted very slightly more left) -->
+    <!-- Left hemisphere -->
+    <circle cx="61" cy="58" r="2.5" fill="#00FFC6"/>
+    <circle cx="51" cy="47" r="2.5" fill="#00FFC6"/>
+    <circle cx="49" cy="69" r="2.5" fill="#00FFC6"/>
+    <circle cx="41" cy="58" r="2.5" fill="#00FFC6"/>
+
+    <!-- Right hemisphere -->
+    <circle cx="81" cy="58" r="2.5" fill="#00FFC6"/>
+    <circle cx="91" cy="47" r="2.5" fill="#00FFC6"/>
+    <circle cx="93" cy="69" r="2.5" fill="#00FFC6"/>
+    <circle cx="101" cy="58" r="2.5" fill="#00FFC6"/>
+
+    <!-- Neural connections -->
+    <line x1="61" y1="58" x2="51" y2="47" stroke="#00FFC6" stroke-width="1.2"/>
+    <line x1="61" y1="58" x2="49" y2="69" stroke="#00FFC6" stroke-width="1.2"/>
+    <line x1="61" y1="58" x2="41" y2="58" stroke="#00FFC6" stroke-width="1.2"/>
+
+    <line x1="81" y1="58" x2="91" y2="47" stroke="#00FFC6" stroke-width="1.2"/>
+    <line x1="81" y1="58" x2="93" y2="69" stroke="#00FFC6" stroke-width="1.2"/>
+    <line x1="81" y1="58" x2="101" y2="58" stroke="#00FFC6" stroke-width="1.2"/>
+
+    <!-- Corpus callosum -->
+    <line x1="61" y1="58" x2="81" y2="58" stroke="#00FFC6" stroke-width="1.2"/>
+  </g>
+
+  <defs>
+    <linearGradient id="gradient" x1="30" y1="25" x2="110" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFC6"/>
+      <stop offset="1" stop-color="#006EFF"/>
+    </linearGradient>
+  </defs>
+</svg>

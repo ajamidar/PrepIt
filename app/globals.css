@@ -2,7 +2,6 @@
 
 @plugin "tailwindcss-animate";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-success-100: #49de50;
@@ -24,7 +23,7 @@
 
   --font-mona-sans: "Mona Sans", sans-serif;
 
-  --bg-pattern: url("/pattern.jpg");
+  --bg-pattern: url("/white-logo.jpg");
 }
 
 :root {
@@ -145,13 +144,13 @@
     @apply text-light-100;
   }
   h1{
-    @apply text-5xl font-bold;
+    @apply text-5xl font-bold text-[#333333];
   }
   h2 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold text-[#333333];
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold text-[#66615B];
   }
   ul {
     @apply list-disc list-inside;
@@ -163,7 +162,7 @@
 
 @layer components {
   .btn-call {
-    @apply inline-block px-7 py-3 font-bold text-sm leading-5 text-white transition-colors duration-150 bg-success-100 border border-transparent rounded-full shadow-sm focus:outline-none focus:shadow-2xl active:bg-success-200 hover:bg-success-200 min-w-28 cursor-pointer items-center justify-center overflow-visible;
+    @apply inline-block px-7 py-5 font-bold text-lg leading-5 text-white transition-colors duration-150 bg-success-100 border-2 border-[#26d22c] rounded-full shadow-sm focus:outline-none focus:shadow-2xl active:bg-success-200 hover:bg-success-200 min-w-28 cursor-pointer items-center justify-center overflow-visible;
 
     .span {
       @apply bg-success-100 h-[85%] w-[65%];
@@ -178,8 +177,13 @@
     @apply flex min-h-14 w-full items-center justify-center gap-1.5 rounded-md;
   }
   .btn-primary {
-    @apply w-fit !bg-primary-200 !text-dark-100 hover:!bg-primary-200/80 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
+    @apply w-fit !button-root !text-white hover:!bg-[#1F49B5] !rounded-full !font-bold px-7 cursor-pointer min-h-15 min-w-2;
   }
+
+  .btn-int-card{
+    @apply w-fit !bg-[#d4d4d1] !text-black hover:!bg-[#ababaa] !rounded-full !font-bold px-7 cursor-pointer min-h-15 min-w-2
+  }
+
   .btn-secondary {
     @apply w-fit !bg-dark-200 !text-primary-200 hover:!bg-dark-200/80 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
   }
@@ -220,11 +224,11 @@
     }
 
     .card-interviewer {
-      @apply flex-center flex-col gap-2 p-7 h-[320px] blue-gradient-dark rounded-lg border-2 border-primary-200/50 flex-1 sm:basis-1/2 w-full;
+      @apply flex-center flex-col gap-2 p-7 h-[320px] call-card-gradient rounded-2xl flex-1 sm:basis-1/2 w-full;
     }
 
     .avatar {
-      @apply z-10 flex items-center justify-center blue-gradient rounded-full size-[120px] relative;
+      @apply z-10 flex items-center justify-center wheat-gradient-white rounded-full size-[120px] relative;
 
       .animate-speak {
         @apply absolute inline-flex size-5/6 animate-ping rounded-full bg-primary-200 opacity-75;
@@ -235,8 +239,12 @@
       @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px] max-md:hidden;
     }
 
+    .card-border-interviewer {
+      @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px];
+    }
+
     .card-content {
-      @apply flex flex-col gap-2 justify-center items-center p-7 dark-gradient rounded-2xl min-h-full;
+      @apply flex flex-col gap-2 justify-center items-center p-7 call-card-gradient rounded-2xl min-h-full;
     }
   }
 
@@ -269,7 +277,7 @@
   }
 
   .card-cta {
-    @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-2 items-center justify-between max-sm:px-4;
+    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-2 items-center justify-between max-sm:px-4;
   }
 
   .card-cta{
@@ -296,7 +304,7 @@
     @apply dark-gradient rounded-2xl min-h-full flex flex-col p-6 relative overflow-hidden gap-10 justify-between;
 
     .badge-text {
-      @apply text-sm font-semibold capitalize;
+      @apply text-sm font-semibold capitalize text-white;
     }
   }
 
@@ -334,28 +342,32 @@
   }
 
   .prep-it{
-    @apply text-primary-100;
+    @apply text-[#333333];
   }
 
   .prep-it:hover{
-    @apply text-primary-200;
+    @apply text-neutral-800;
   }
 
   .root-logo-pic{
     @apply size-[350px];
   }
+
+  .under-root-logo{
+    @apply text-[12px] text-[#66615B]
+  }
 }
 
 @utility dark-gradient {
-  @apply bg-gradient-to-b from-[#1A1C20] to-[#08090D];
+  @apply bg-gradient-to-b from-[#cce1fa] to-[#60abfb];
 }
 
 @utility border-gradient {
-  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+  @apply bg-gradient-to-b from-[#060606] to-[#040404];
 }
 
-@utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
+@utility wheat-gradient-white {
+  @apply bg-gradient-to-b from-[#d4d4d1] to-[#e8e3db];
 }
 
 @utility blue-gradient {
@@ -368,6 +380,14 @@
 
 @utility animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
+}
+
+@utility button-root{
+  background: #2B60DE;
+}
+
+@utility call-card-gradient{
+   @apply bg-gradient-to-l from-[#747476] to-[#323234];
 }
 
 @keyframes fadeIn {
@@ -383,7 +403,7 @@
 
 @layer utilities {
   .pattern {
-    @apply bg-[url('/pattern.jpg')] bg-repeat;
+    @apply bg-[url('/white-logo.jpg')] bg-repeat;
     animation: subtlePulse 10s ease-in-out infinite;
   }
 }

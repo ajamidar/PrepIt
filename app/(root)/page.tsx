@@ -10,18 +10,22 @@ const page = () => {
   return (
     <>
     <section className='card-cta'>
-      <div className='flex flex-col gap-6 max-w-lg'>
-        <h2>HAVE AN INTERVIEW?</h2>
-        <p className='text-lg'>
-          Lets help us prepare you like the million others. 
-        </p>
-
-        <Button asChild className='btn-primary max-sm:w-full'>
-          <Link href="/interview">Generate a Mock Interview</Link>
-        </Button>
+      <div className='flex flex-col gap-20'>
+          <div className='flex flex-col gap-1 max-w-lg'>
+            <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
+            <p className='text-lg text-neutral-950'>
+              Lets help us prepare you like the million others. 
+            </p>
+          </div>
+        
+          <div className='flex flex-col gap-1 max-w-lg'>
+            <Button asChild className='btn-primary max-sm:w-full'>
+              <Link href="/interview">Generate a Mock Interview</Link>
+            </Button>
+          </div>
       </div>
     
-      <Image src="/root-logo.png" alt='robot' width={400} height={400} className='max-sm:hidden root-logo-pic' />
+      <Image src="/root-logo2.png" alt='robot' width={400} height={400} className='max-sm:hidden root-logo-pic' />
     </section>
 
     <section className='flex flex-col gap-6 mt-8'>
