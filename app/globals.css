@@ -330,7 +330,7 @@
   }
 
   nav{
-    @apply  px-4 py-8 w-full
+    @apply  px-4 py-8 w-full max-sm:py-4
   }
 
   .link{
