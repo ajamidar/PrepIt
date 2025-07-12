@@ -114,17 +114,17 @@ const Agent = ({ userName, userId, type }: AgentProps) => {
                 <div className='card-border-interviewer'>
                   <div className='card-interviewer'>
                       <div className='avatar'>
-                          <Image src="/ai-avatar.png" alt="Vapi" width={65} height={54} className='object-cover' />
+                          <Image src="/man-avatar.png" alt="Vapi" width={108} height={104} className='object-cover' />
                           {isSpeaking && <span className='animate-speak'/>}
                       </div>
-                      <h3 className='text-white'>AI Interviewer</h3>
+                      <h3 className='text-black'>AI Interviewer</h3>
                   </div>
                 </div>
 
                 <div className='card-border'>
                     <div className='card-content'>
                         <Image src="/image1.jpeg" alt="user avatar" width={540} height={540} className='rounded-full object-cover size-[120px]' />
-                        <h3 className='text-white'>{userName}</h3>
+                        <h3 className='text-black'>{userName}</h3>
                     </div>
                 </div>
 

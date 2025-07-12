@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
     <section className='card-cta'>
-      <div className='flex flex-col gap-20'>
+      <div className='flex flex-col gap-22'>
           <div className='flex flex-col gap-1 max-w-lg'>
             <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
             <p className='text-lg text-neutral-950'>

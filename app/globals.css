@@ -177,7 +177,7 @@
     @apply flex min-h-14 w-full items-center justify-center gap-1.5 rounded-md;
   }
   .btn-primary {
-    @apply w-fit !button-root !text-white hover:!bg-[#1F49B5] !rounded-full !font-bold px-7 cursor-pointer min-h-15 min-w-2;
+    @apply w-80 !button-root !text-white hover:!bg-[#1F49B5] !rounded-full !font-extrabold px-7 cursor-pointer min-h-18 min-w-2 !text-[18px];
   }
 
   .btn-int-card{
@@ -228,19 +228,19 @@
     }
 
     .avatar {
-      @apply z-10 flex items-center justify-center wheat-gradient-white rounded-full size-[120px] relative;
+      @apply z-10 flex items-center justify-center bg-[#686666] rounded-full size-[120px] relative;
 
       .animate-speak {
-        @apply absolute inline-flex size-5/6 animate-ping rounded-full bg-primary-200 opacity-75;
+        @apply absolute inline-flex size-5/6 animate-ping rounded-full bg-white opacity-75;
       }
     }
 
     .card-border {
-      @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px] max-md:hidden;
+      @apply border-gradient p-0 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px] max-md:hidden;
     }
 
     .card-border-interviewer {
-      @apply border-gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px];
+      @apply border-gradient p-0 rounded-2xl flex-1 sm:basis-1/2 w-full h-[320px];
     }
 
     .card-content {
@@ -252,10 +252,10 @@
     @apply border-gradient p-0.5 rounded-2xl w-full;
 
     .transcript {
-      @apply dark-gradient rounded-2xl  min-h-12 px-5 py-3 flex items-center justify-center;
+      @apply call-card-gradient rounded-2xl  min-h-12 px-5 py-3 flex items-center justify-center;
 
       p {
-        @apply text-lg text-center text-white;
+        @apply text-lg text-center text-black;
       }
     }
   }
@@ -387,7 +387,7 @@
 }
 
 @utility call-card-gradient{
-   @apply bg-gradient-to-l from-[#747476] to-[#323234];
+   @apply bg-gradient-to-l from-[#cdcdcd] to-[#b1b1b1];
 }
 
 @keyframes fadeIn {
