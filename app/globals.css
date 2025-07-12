@@ -208,7 +208,7 @@
     }
 
     .input {
-      @apply !bg-dark-200 !rounded-full !min-h-12 !px-5 placeholder:!text-white;
+      @apply !bg-white !rounded-full !min-h-12 !px-5 placeholder:!text-black;
     }
 
     .btn {
