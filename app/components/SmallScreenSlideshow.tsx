@@ -7,7 +7,7 @@ import Image from 'next/image'
 const images = [
   '/review1.png',
   '/review2.png',
-  '/Slideshow1.png'
+  '/review3.png'
 ]
 
 const SmallScreenSlideShow = () => {
