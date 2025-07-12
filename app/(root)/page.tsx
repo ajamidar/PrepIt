@@ -5,8 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import InterviewCard from '../components/InterviewCard'
+import Slideshow from '../components/SlideShow'
+import SmallScreenSlideShow from '../components/SmallScreenSlideshow'
 
 const page = () => {
+
   return (
     <>
     <section className='card-cta'>
@@ -25,8 +28,9 @@ const page = () => {
           </div>
       </div>
     
-      <Image src="/root-logo2.png" alt='robot' width={420} height={420} className='max-sm:hidden root-logo-pic' />
+      <Slideshow />
     </section>
+    <SmallScreenSlideShow />
 
     <section className='flex flex-col gap-6 mt-8'>
       <h2>Your Interviews</h2>
