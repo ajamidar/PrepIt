@@ -31,7 +31,7 @@ const page = () => {
       <Slideshow />
     </section>
     <div className='flex flex-col min-sm:hidden py-4'>
-      <h2>How do we help you?</h2>
+      <h2>A few reviews...</h2>
       <SmallScreenSlideShow />
     </div>
 
