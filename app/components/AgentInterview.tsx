@@ -138,7 +138,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
                 <div className='card-border-interviewer'>
                   <div className='card-interviewer'>
                       <div className='avatar'>
-                          <Image src="/man-avatar.png" alt="Vapi" width={108} height={104} className='object-cover' />
+                          <Image src="/woman-avatar.png" alt="Vapi" width={80} height={95} className='object-cover' />
                           {isSpeaking && <span className='animate-speak'/>}
                       </div>
                       <h3 className='text-black'>AI Interviewer</h3>
@@ -169,7 +169,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
                     <button className='relative btn-call' onClick={handleCall}>
                         <span className={cn('absolute animate-ping rounded-full opacity-75', callStatus != 'CONNECTING' &&'hidden')}/>
                         <span>
-                            {isCallInactiveOtFinished ? 'Call to Generate Interview' : '. . .'}
+                            {isCallInactiveOtFinished ? 'Start Interview' : '. . .'}
                         </span>
                     </button>
                 ) : (

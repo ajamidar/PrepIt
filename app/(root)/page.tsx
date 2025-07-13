@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { dummyInterviews } from '@/constants'
 import { ImageConfigContext } from 'next/dist/shared/lib/image-config-context.shared-runtime'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +6,8 @@ import React from 'react'
 import InterviewCard from '../components/InterviewCard'
 import Slideshow from '../components/SlideShow'
 import SmallScreenSlideShow from '../components/SmallScreenSlideshow'
-import { getCurrentUser, getInterviewByUserId, getLatestInterviews } from '@/lib/actions/auth.action'
+import { getCurrentUser,  } from '@/lib/actions/auth.action'
+import { getInterviewByUserId, getLatestInterviews } from '@/lib/actions/general.action'
 
 const page = async () => {
   const user = await getCurrentUser();
