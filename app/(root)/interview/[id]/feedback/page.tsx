@@ -19,8 +19,6 @@ const page = async ({ params }: RouteParams) => {
     userId: user?.id!,
   })
 
-  console.log(feedback)
-
   return (
    <section className="section-feedback mb-4">
       <div className="flex flex-row justify-center">
