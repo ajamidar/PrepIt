@@ -273,7 +273,7 @@
   }
 
   .root-layout {
-    @apply flex mx-auto max-w-7xl flex-col gap-2 my-0 px-16 max-sm:px-4 max-sm:my-4;
+    @apply flex mx-auto max-w-7xl flex-col gap-2 mb-4 px-16 max-sm:px-4 max-sm:mt-0;
   }
 
   .card-cta {

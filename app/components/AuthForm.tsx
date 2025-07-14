@@ -115,11 +115,21 @@ const AuthForm = ({ type }: {type: FormType}) => {
                         label = "Email"
                         placeholder='Your email address'
                         type='email' />
-            <FormField control={form.control}
-                        name = "password"
-                        label = "Password"
-                        placeholder='Enter your password'
-                        type='password' />
+            
+            <div className='flex flex-col gap-1.5'>
+              <FormField control={form.control}
+                          name = "password"
+                          label = "Password"
+                          placeholder='Enter your password'
+                          type='password' />
+              
+              {isSignIn && 
+              <p className='text-black px-3 text-sm'>Forgot Password?
+              <Link href='/sign-in/forgot-password' className='font-semibold text-[#ff1010] hover:text-[#ad5555]'>  Reset Password here</Link>
+              </p>  
+              }
+            </div>
+
             <Button className='btn' type="submit">{isSignIn ? "Sign in" : "Create an Account"}</Button>
           </form>
         </Form>
