@@ -153,10 +153,10 @@
     @apply text-2xl font-semibold text-[#66615B];
   }
   ul {
-    @apply list-disc list-inside;
+    @apply list-disc list-inside text-[#333333];
   }
   li {
-    @apply text-light-100;
+    @apply text-[#333333];
   }
 }
 
