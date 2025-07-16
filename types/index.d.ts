@@ -11,6 +11,7 @@ interface Feedback {
   areasForImprovement: string[];
   finalAssessment: string;
   createdAt: string;
+  userId: string;
 }
 
 interface Interview {
@@ -52,8 +53,9 @@ interface AgentProps {
   userId?: string;
   interviewId?: string;
   feedbackId?: string;
-  type: "generate" | "interview";
+  type: "generate" | "interview" | "analyst" ;
   questions?: string[];
+  feedback?: string;
 }
 
 interface RouteParams {
@@ -96,4 +98,8 @@ interface InterviewFormProps {
 
 interface TechIconProps {
   techStack: string[];
+}
+
+interface FeedbackVideoProps{
+  script: string;
 }

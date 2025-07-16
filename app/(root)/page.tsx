@@ -1,24 +1,24 @@
 import { Button } from '@/components/ui/button'
-import { ImageConfigContext } from 'next/dist/shared/lib/image-config-context.shared-runtime'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import InterviewCard from '../components/InterviewCard'
 import Slideshow from '../components/SlideShow'
 import SmallScreenSlideShow from '../components/SmallScreenSlideshow'
-import { getCurrentUser,  } from '@/lib/actions/auth.action'
+import { getCurrentUser  } from '@/lib/actions/auth.action'
 import { getInterviewByUserId, getLatestInterviews } from '@/lib/actions/general.action'
 
 const page = async () => {
   const user = await getCurrentUser();
+  //console.log(user?.id)
 
   const [userInterviews, latestInterviews] = await Promise.all([
     await getInterviewByUserId(user?.id!),
     await getLatestInterviews({ userId: user?.id! })
   ]);
 
-  const hasPastInterviews = userInterviews?.length > 0;
-  const hasUpcomingInterviews = latestInterviews?.length > 0;
+  const hasPastInterviews = userInterviews?.length! > 0;
+  const hasUpcomingInterviews = latestInterviews?.length! > 0;
 
   return (
     <>
@@ -69,7 +69,7 @@ const page = async () => {
       <div className='interviews-section'>
         {
         hasUpcomingInterviews ? (
-          latestInterviews?.map((interview) => (
+          latestInterviews?.slice(0,6).map((interview) => (
           <InterviewCard {...interview} key={interview.id} />
         ))) : (
         <p className='text-black'>There are no new interviews available</p>

@@ -277,7 +277,7 @@
   }
 
   .card-cta {
-    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-2 items-center justify-between max-sm:px-5 max-sm:py-5;
+    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-0 items-center justify-between max-sm:px-5 max-sm:py-5;
   }
 
   .card-cta{
@@ -330,11 +330,11 @@
   }
 
   nav{
-    @apply  px-4 py-8 w-full max-sm:py-6
+    @apply  px-4 py-3.5 mt-2.5 w-full max-sm:py-6
   }
 
   .link{
-    transition: 0.3s ease;
+    transition: 0.5s ease;
   }
 
   .link:hover{
@@ -372,6 +372,10 @@
 
 @utility blue-gradient {
   @apply bg-gradient-to-l from-[#FFFFFF] to-[#CAC5FE];
+}
+
+@utility glow-grey-gradient{
+  @apply bg-gradient-to-b from-[#0000002f] to-[#c4c3c365];
 }
 
 @utility flex-center {
@@ -423,3 +427,35 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

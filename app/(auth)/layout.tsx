@@ -8,7 +8,7 @@ const Authlayout = async ({ children }: { children: ReactNode}) => {
   if(isUserAuthenicated) redirect('/');
 
   return (
-    <div className='auth-layout'>{children}</div>
+    <div className='flex flex-col'>{children}</div>
   )
 }
 

@@ -61,7 +61,7 @@ const AuthForm = ({ type }: {type: FormType}) => {
           }
 
           toast.success('Account created successfully. Please sign.in');
-          router.push('/sign-in')
+          router.push('/landing/sign-in')
        } else {
           const { email, password} = values;
 
@@ -90,8 +90,9 @@ const AuthForm = ({ type }: {type: FormType}) => {
   const isSignIn = type === "sign-in";
 
   return (
+    <div className='auth-layout'>
     <div className='card-border lg:min-w-[566px]'>
-      <div className='flex flex-col gap-5 card py-14 px-10'>
+      <div className='flex flex-col gap-5 card py-10 px-10'>
         <div className='flex flex-col items-center'>
           <div className='flex flex-row gap-1 justify-center'>
             <Image src="/logo4.svg" alt="logo" height={50} width={48} />
@@ -136,11 +137,12 @@ const AuthForm = ({ type }: {type: FormType}) => {
 
         <p className='text-center text-black'>
           {isSignIn ? "No account yet?" : "Have an account already?"}
-          <Link href={!isSignIn ? '/sign-in' : '/sign-up'} className='font-bold hover:!text-[#333333] text-user-primary ml-1'>
+          <Link href={!isSignIn ? '/landing/sign-in' : '/landing/sign-up'} className='font-bold hover:!text-[#333333] text-user-primary ml-1'>
             {!isSignIn ? "Sign in" : "Sign up"}
           </Link>
         </p>
 
+  </div>
   </div>
   </div>
   )

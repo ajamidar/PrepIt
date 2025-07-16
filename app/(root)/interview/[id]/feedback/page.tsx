@@ -7,6 +7,9 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React from 'react'
 
+
+
+
 const page = async ({ params }: RouteParams) => {
   const { id } = await params;
   const user = await getCurrentUser();
@@ -18,6 +21,10 @@ const page = async ({ params }: RouteParams) => {
     interviewId: id,
     userId: user?.id!,
   })
+
+
+  //const feedbackScript = `Hi ${user?.name}. Here is some brief feedback on how your interview went:Your total score was ${feedback?.totalScore}/100;The Final brief assessment that me and colleagues formed is that ${feedback?.finalAssessment}.`;
+
 
   return (
    <section className="section-feedback mb-4">
@@ -54,12 +61,25 @@ const page = async ({ params }: RouteParams) => {
         </div>
       </div>
 
+      <div className='flex flew-rol items-center'>
+        <Button className="btn-secondary flex-1">
+          <Link
+            href={`/interview/${id}/feedback/feedback-analyst`}
+            className="flex w-full justify-center"
+          >
+            <p className="text-xl font-semibold text-[#78f658] text-center">
+              Get Feedback from AI Analyst
+            </p>
+          </Link>
+        </Button>
+      </div>
+
       <hr />
 
       <p className='text-black'>{feedback?.finalAssessment}</p>
 
       {/* Interview Breakdown */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 opacity-0 animate-[slideInLeft_0.5s_ease-out_forwards] delay-200 duration-500">
         <h2>Breakdown of the Interview:</h2>
         {feedback?.categoryScores?.map((category, index) => (
           <div key={index}>
@@ -71,7 +91,8 @@ const page = async ({ params }: RouteParams) => {
         ))}
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div 
+        className={'flex flex-col gap-3'}>
         <h3 className='text-black'>Strengths</h3>
         <ul>
           {feedback?.strengths?.map((strength, index) => (
@@ -80,7 +101,7 @@ const page = async ({ params }: RouteParams) => {
         </ul>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 ">
         <h3 className='text-black'>Areas for Improvement</h3>
         <ul>
           {feedback?.areasForImprovement?.map((area, index) => (
