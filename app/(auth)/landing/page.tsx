@@ -107,13 +107,13 @@ const page = () => {
         </section>
 
         <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#afb0b16f] to-[#38383875] max-sm:px-5 max-sm:py-5'>
-          <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl max-sm:px-6">
+          <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl max-sm:px-10">
             <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f]  max-sm:px-5 max-sm:py-5'>
-          <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4 max-sm:px-6">
+          <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4 max-sm:px-10">
             <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-lg'></Image>
           </motion.div>
         </section>
