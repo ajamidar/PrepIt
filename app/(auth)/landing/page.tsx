@@ -157,7 +157,7 @@ const page = () => {
           </section>
         </div>
         
-        <div className='flex flex-col min-sm:hidden py-6 px-8'>
+        <div className='flex flex-col min-sm:hidden py-6 px-8 bg-[#fff5cb75]'>
           <h2>Some reviews...</h2>
           <SmallScreenSlideShow />
         </div>
@@ -189,14 +189,14 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] '>
+        <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] max-sm:pb-1'>
           <motion.div style={{ x }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-3 max-sm:px-15 max-sm:bg-transparent">
             <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-3xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
-          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2">
+          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2 max-sm:pt-1 max-sm:mt-0">
           <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Get</h1>
             <h1 className='text-[#ff9036] max-sm:text-[15px] font-extrabold'>MORE</h1>
@@ -205,42 +205,42 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-50'>
-          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-10">
-            <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
+        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-50 max-sm:overflow-scroll max-sm:pt-0'>
+          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl">
+            <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Choose your ideal techstack from</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px] text-center'>Choose your ideal techstack from</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <motion.h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>
+                <motion.h1 className='text-[#51ff36] text-lg max-sm:text-[5px] font-extrabold'>
                   {displayCount}
                 </motion.h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>+ Technologies and languages</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>+ Technologies and languages</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>from across the globe 🌎🚀</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>from across the globe 🌎🚀</h1>
             </span>
           </motion.div>
-          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2">
-            <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl max-sm:h-min'></Image>
+          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:w-3xl">
+            <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:h-min max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Ace your next job Interview</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px] text-center'>Ace your next job Interview</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>Boost your knowledge by</h1>
-                <h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>&nbsp;{display200Count}</h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>%</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>Boost your knowledge by</h1>
+                <h1 className='text-[#51ff36] text-lg max-sm:text-[5px] font-extrabold'>&nbsp;{display200Count}</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>%</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>and gain more confidence ⭐✨</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>and gain more confidence ⭐✨</h1>
             </span>
           </motion.div>
-          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2">
-            <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
+          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:mr-5 max-sm:w-3xl">
+            <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Go above and beyond with</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px] text-center'>Go above and beyond with</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>upto</h1>
-                <h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>&nbsp;{display10Count}</h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>+ FREE high quality</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>upto</h1>
+                <h1 className='text-[#51ff36] text-lg max-sm:text-[5px] font-extrabold'>&nbsp;{display10Count}</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>+ FREE high quality</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>interviews ready for you 🧠✅</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5px]'>interviews ready for you 🧠✅</h1>
             </span>
           </motion.div>
         </section>
