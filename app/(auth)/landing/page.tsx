@@ -17,6 +17,8 @@ const page = () => {
   }
 
   const ref = useRef(null)
+  const leftRef = useRef(null)
+  const rightRef = useRef(null)
 
   // Get scroll progress relative to the section
   const { scrollYProgress } = useScroll({
@@ -24,9 +26,22 @@ const page = () => {
     offset: ['start end', 'end start'], // when it enters to when it leaves
   })
 
+  const { scrollYProgress: boxScrollXProgress } = useScroll({
+    target: leftRef,
+    offset: ['start end', 'end start'],
+  })
+
+  const {scrollYProgress: rightSectionScroll} = useScroll({
+    target: rightRef,
+    offset: ['start end', 'end start'],
+  })
+
   // Animate vertical movement and scale
   const y = useTransform(scrollYProgress, [0, 1], [100, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.4])
+
+  const x = useTransform(boxScrollXProgress, [0, 1], [-75, 0])
+  const xRight = useTransform(rightSectionScroll, [0, 1], [75, 0]) 
 
   return (
     <>
@@ -70,19 +85,40 @@ const page = () => {
           <SmallScreenSlideShow />
         </div>
 
-        <section ref={ref} className='mt-12 mb-3 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] rounded-t-xl'>
+        <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl'>
           <span className='flex flex-row py-0 gap-2.5 mt-6'>
             <h1 className='text-[#333333] text-center'>Practice for Interviews like</h1>
             <h1 className='text-[#487cff] font-extrabold'>NEVER</h1>
             <h1>before</h1>
           </span>
-          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl ">
-            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl mt-2'></Image>
+          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2">
+            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl'></Image>
           </motion.div>
         </section>
-        <div className='mt-10'>
-          <Image src='/home-page.png' alt='home-page' height={600} width={650} className='rounded-lg'></Image>
-        </div>
+
+        <section ref={leftRef} className='flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f] '>
+          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2">
+          <span className='flex flex-row py-0 gap-2.5 mt-9'>
+            <h1 className='text-[#333333] text-center'>Using</h1>
+            <h1 className='text-[#c850ff] font-extrabold'>AI-Powered</h1>
+            <h1>Mock Interviews & Feedback</h1>
+          </span>
+          </motion.div>
+        </section>
+
+        <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#afb0b16f] to-[#38383875] '>
+          <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl">
+            <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg'></Image>
+          </motion.div>
+        </section>
+
+        <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f]  '>
+          <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4">
+            <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-lg'></Image>
+          </motion.div>
+        </section>
+
+
       </div>
     </>
   )
