@@ -40,7 +40,7 @@ const page = () => {
   const y = useTransform(scrollYProgress, [0, 1], [100, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.4])
 
-  const x = useTransform(boxScrollXProgress, [0, 0.5], [-100, 0])
+  const x = useTransform(boxScrollXProgress, [0, 0.7], [-100, 0])
   const xRight = useTransform(rightSectionScroll, [0, 0.7], [100, 0]) 
 
   const countRef = useRef(null);
@@ -138,7 +138,7 @@ const page = () => {
         <hr/>
         
         <div className='bg-gradient-to-b from-[#d9f1fb2f] to-[#fff5cb75] pt-5 pb-5'>
-          <section className='card-cta mb-0 mr-8 ml-8'>
+          <section className='card-cta mb-0 mr-12 ml-12'>
             <div className='flex flex-col gap-22'>
                 <div className='flex flex-col gap-1 max-w-lg'>
                     <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
