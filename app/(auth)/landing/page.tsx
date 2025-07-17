@@ -209,38 +209,38 @@ const page = () => {
           <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-15 max-sm:ml-10">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Choose your ideal techstack from</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Choose your ideal techstack from</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <motion.h1 className='text-[#51ff36] text-lg max-sm:text-[15px] font-extrabold'>
+                <motion.h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>
                   {displayCount}
                 </motion.h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>+ Technologies and languages</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>+ Technologies and languages</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>from across the globe 🌎🚀</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>from across the globe 🌎🚀</h1>
             </span>
           </motion.div>
           <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-15">
-            <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
+            <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl max-sm:h-min'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Ace your next job Interview</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Ace your next job Interview</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>Boost your knowledge by</h1>
-                <h1 className='text-[#51ff36] text-lg max-sm:text-[15px] font-extrabold'>&nbsp;{display200Count}</h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>%</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>Boost your knowledge by</h1>
+                <h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>&nbsp;{display200Count}</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>%</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>and gain more confidence ⭐✨</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>and gain more confidence ⭐✨</h1>
             </span>
           </motion.div>
           <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-15">
             <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-1'>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Go above and beyond with</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Go above and beyond with</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>upto</h1>
-                <h1 className='text-[#51ff36] text-lg max-sm:text-[15px] font-extrabold'>&nbsp;{display10Count}</h1>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>+ FREE high quality</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>upto</h1>
+                <h1 className='text-[#51ff36] text-lg max-sm:text-[10px] font-extrabold'>&nbsp;{display10Count}</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>+ FREE high quality</h1>
               </span>
-              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>interviews ready for you 🧠✅</h1>
+              <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>interviews ready for you 🧠✅</h1>
             </span>
           </motion.div>
         </section>
