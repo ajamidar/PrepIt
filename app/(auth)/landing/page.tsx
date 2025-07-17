@@ -80,18 +80,18 @@ const page = () => {
           <Slideshow />
         </section>
         
-        <div className='flex flex-col min-sm:hidden py-6 px-16'>
+        <div className='flex flex-col min-sm:hidden py-6 px-8'>
           <h2>Some reviews...</h2>
           <SmallScreenSlideShow />
         </div>
 
         <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:px-5 max-sm:py-5'>
           <span className='flex flex-row py-0 gap-2.5 mt-6'>
-            <h1 className='text-[#333333] max-sm:text-[10px] text-center'>Practice for Interviews like</h1>
-            <h1 className='text-[#487cff] max-sm:text-[10px] font-extrabold'>NEVER</h1>
-            <h1>before</h1>
+            <h1 className='text-[#333333] max-sm:text-[15px] text-center'>Practice for Interviews like</h1>
+            <h1 className='text-[#487cff] max-sm:text-[15px] font-extrabold'>NEVER</h1>
+            <h1 className='max-sm:text-[15px]'>before</h1>
           </span>
-          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2">
+          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2 max-sm:px-8">
             <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
