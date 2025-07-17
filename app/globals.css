@@ -180,6 +180,10 @@
     @apply w-80 !button-root !text-white hover:!bg-[#1F49B5] !rounded-full !font-extrabold px-7 cursor-pointer min-h-18 min-w-2 !text-[18px];
   }
 
+  .btn-tertiary {
+    @apply w-30 !bg-[#41df4e] !text-white hover:!bg-[#479250] !rounded-full !font-extrabold px-2 cursor-pointer min-h-14 min-w-2 !text-[18px]
+  }
+
   .btn-int-card{
     @apply w-fit !bg-[#d4d4d1] !text-black hover:!bg-[#ababaa] !rounded-full !font-bold px-7 cursor-pointer min-h-13 min-w-2
   }
@@ -367,7 +371,7 @@
 }
 
 @utility wheat-gradient-white {
-  @apply bg-gradient-to-b from-[#d4d4d1] to-[#e8e3db];
+  @apply bg-gradient-to-b from-[#b0b0ac7e] to-[#b0a99f82];
 }
 
 @utility blue-gradient {

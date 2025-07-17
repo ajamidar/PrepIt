@@ -8,6 +8,7 @@ import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 import { motion, useViewportScroll, useTransform, useScroll, useMotionValue, animate, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Bruno_Ace } from 'next/font/google';
 
 
 const page = () => {
@@ -117,22 +118,30 @@ const page = () => {
     }
   }, [is10BoostInView]);
 
+  const fadeInRef = useRef(null);
+  const isFadeInView = useInView(fadeInRef, { once: true });
+
 
   return (
     <>
-      <div className='flex flex-col mt-0 py-0 mb-30'>
-        <nav className='py-4 px-16 max-sm:px-8'>
+      <div className='flex flex-col mt-0 py-0 mb-30 bg-gradient-to-b from-[#b6e9ff54] to-[#d9f1fb2f]'>
+        <nav className='py-4 px-16 max-sm:px-8 flex flex-row gap-250 justify-center items-center'>
             <Link href="/" className='flex items-center gap-2 link'>
             <div className='flex flex-col'>
                 <div className='flex flex-row gap-1'>
                 <Image src="/logo4.svg" alt="logo" width={50} height={38} />
                 <h1 className='prep-it'>PrepIt</h1>
               </div>
-              <div>
-                <p className='under-root-logo'>World's #1 AI-Powered Interview preparation tool</p>
+              <div className='flex flex-row'>
+                <p className='under-root-logo'>World's</p>
+                <p className='under-root-logo text-[#ffb700] font-bold'>&nbsp;#1</p>
+                <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
               </div>
             </div>
             </Link>
+            <Button className='btn-tertiary'>
+              <Link href='/landing/sign-in'>Sign In</Link>
+            </Button>
         </nav>
 
         <hr/>
@@ -195,7 +204,7 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section ref={leftRef} className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
+        <section className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
           <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2 max-sm:pt-1 max-sm:mt-0">
           <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Get</h1>
@@ -205,7 +214,7 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-50 max-sm:overflow-scroll max-sm:pt-0'>
+        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-10 max-sm:overflow-scroll max-sm:pt-0'>
           <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-0.5'>
@@ -243,6 +252,33 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px]'>interviews ready for you 🧠✅</h1>
             </span>
           </motion.div>
+        </section>
+
+        <section className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
+          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2 max-sm:pt-1 max-sm:mt-0">
+          <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
+            <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Generate your first Interview within seconds</h1>
+            <h1 className='text-[#31e505] max-sm:text-[15px] font-extrabold'>NOW</h1>
+          </span>
+          </motion.div>
+        </section>
+
+        <motion.section className='flex flex-row justify-center items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pb-10'>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
+            <Image src='/sign-up.png' alt='home-page' height={350} width={560} className='rounded-3xl max-sm:w-xl'></Image>
+          </motion.div>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 2, ease: 'easeIn' }} className='text-[#333333] px-4'>
+            <h3 className='font-bold'>OR</h3>
+          </motion.div>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 2.5, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
+            <Image src='/sign-in.png' alt='home-page' height={400} width={600} className='rounded-3xl max-sm:w-xl'></Image>
+          </motion.div>
+        </motion.section>
+
+        <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f] pb-10'>
+          <motion.button ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 3, ease: 'easeIn' }} className='btn-primary'>
+            <Link href='/landing/sign-up' className='text-xl'>Get Started</Link>
+          </motion.button>
         </section>
 
       </div>
