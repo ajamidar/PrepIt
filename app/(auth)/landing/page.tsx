@@ -87,33 +87,33 @@ const page = () => {
 
         <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:px-5 max-sm:py-5'>
           <span className='flex flex-row py-0 gap-2.5 mt-6'>
-            <h1 className='text-[#333333] max-sm:text-[15px] text-center'>Practice for Interviews like</h1>
-            <h1 className='text-[#487cff] max-sm:text-[15px] font-extrabold'>NEVER</h1>
-            <h1 className='max-sm:text-[15px]'>before</h1>
+            <h1 className='text-[#333333] max-sm:text-[20px] text-center'>Practice for Interviews like</h1>
+            <h1 className='text-[#487cff] max-sm:text-[20px] font-extrabold'>NEVER</h1>
+            <h1 className='max-sm:text-[20px]'>before</h1>
           </span>
-          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2 max-sm:px-8">
+          <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2 max-sm:px-6">
             <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f] max-sm:px-5 max-sm:py-5'>
-          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2">
+          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2 max-sm:px-6">
           <span className='flex flex-row py-0 gap-2.5 mt-9'>
-            <h1 className='text-[#333333] text-center'>Using</h1>
-            <h1 className='text-[#c850ff] font-extrabold'>AI-Powered</h1>
-            <h1>Mock Interviews & Feedback</h1>
+            <h1 className='text-[#333333] max-sm:text-[20px] text-center'>Using</h1>
+            <h1 className='text-[#c850ff] max-sm:text-[20px] font-extrabold'>AI-Powered</h1>
+            <h1 className='max-sm:text-[20px]'>Mock Interviews & Feedback</h1>
           </span>
           </motion.div>
         </section>
 
         <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#afb0b16f] to-[#38383875] max-sm:px-5 max-sm:py-5'>
-          <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl">
+          <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl max-sm:px-6">
             <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f]  max-sm:px-5 max-sm:py-5'>
-          <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4">
+          <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4 max-sm:px-6">
             <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-lg'></Image>
           </motion.div>
         </section>
