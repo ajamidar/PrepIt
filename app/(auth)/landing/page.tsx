@@ -46,7 +46,7 @@ const page = () => {
   return (
     <>
       <div className='flex flex-col mt-0 py-0 mb-5'>
-        <nav className='py-4 px-16'>
+        <nav className='py-4 px-16 max-sm:px-8'>
             <Link href="/" className='flex items-center gap-2 link'>
             <div className='flex flex-col'>
                 <div className='flex flex-row gap-1'>
@@ -86,7 +86,7 @@ const page = () => {
         </div>
 
         <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:px-5 max-sm:py-5'>
-          <span className='flex flex-row py-0 gap-2.5 mt-6'>
+          <span className='flex flex-row py-0 gap-2.5 mt-6 max-sm:text-[10px]'>
             <h1 className='text-[#333333] text-center'>Practice for Interviews like</h1>
             <h1 className='text-[#487cff] font-extrabold'>NEVER</h1>
             <h1>before</h1>
