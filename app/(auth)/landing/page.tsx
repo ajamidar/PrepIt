@@ -206,7 +206,7 @@ const page = () => {
         </section>
 
         <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-50'>
-          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-15 max-sm:ml-10">
+          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-10">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Choose your ideal techstack from</h1>
@@ -219,7 +219,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>from across the globe 🌎🚀</h1>
             </span>
           </motion.div>
-          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-15">
+          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2">
             <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl max-sm:h-min'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Ace your next job Interview</h1>
@@ -231,7 +231,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px]'>and gain more confidence ⭐✨</h1>
             </span>
           </motion.div>
-          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-15">
+          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2">
             <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[10px] text-center'>Go above and beyond with</h1>
