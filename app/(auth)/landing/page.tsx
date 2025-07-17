@@ -86,13 +86,13 @@ const page = () => {
         </div>
 
         <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:px-5 max-sm:py-5'>
-          <span className='flex flex-row py-0 gap-2.5 mt-6 max-sm:text-[10px]'>
-            <h1 className='text-[#333333] text-center'>Practice for Interviews like</h1>
-            <h1 className='text-[#487cff] font-extrabold'>NEVER</h1>
+          <span className='flex flex-row py-0 gap-2.5 mt-6'>
+            <h1 className='text-[#333333] max-sm:text-[10px] text-center'>Practice for Interviews like</h1>
+            <h1 className='text-[#487cff] max-sm:text-[10px] font-extrabold'>NEVER</h1>
             <h1>before</h1>
           </span>
           <motion.div style={{ y, scale }} className="flex justify-center items-center rounded-2xl mt-2">
-            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl'></Image>
+            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
