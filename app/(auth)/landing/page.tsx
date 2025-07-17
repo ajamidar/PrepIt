@@ -85,7 +85,7 @@ const page = () => {
           <SmallScreenSlideShow />
         </div>
 
-        <section ref={ref} className='mt-12 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:h-[300px]'>
+        <section ref={ref} className='mt-6 flex flex-col items-center h-[740px] bg-gradient-to-b from-[#afb0b16f] to-[#38383875] pb-2 rounded-t-xl max-sm:h-[300px]'>
           <span className='flex flex-row py-0 gap-2.5 mt-6 max-sm:gap-1.5'>
             <h1 className='text-[#333333] max-sm:text-[15px] text-center'>Practice for Interviews like</h1>
             <h1 className='text-[#487cff] max-sm:text-[15px] font-extrabold'>NEVER</h1>
@@ -108,13 +108,13 @@ const page = () => {
 
         <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#afb0b16f] to-[#38383875]'>
           <motion.div style={{ x:xRight }} className="flex justify-center items-center rounded-2xl max-sm:px-20">
-            <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg'></Image>
+            <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#38383875] to-[#afb0b16f] '>
           <motion.div style={{ x }} className="flex justify-center items-center rounded-2xl mt-3 pt-4 max-sm:px-20">
-            <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-lg'></Image>
+            <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-lg max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
