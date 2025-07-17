@@ -168,7 +168,7 @@ const page = () => {
             <h1 className='text-[#487cff] max-sm:text-[17px] font-extrabold'>NEVER</h1>
             <h1 className='text-black max-sm:text-[17px]'>before</h1>
           </span>
-          <motion.div style={{ y, scale }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-2 max-sm:px-12">
+          <motion.div style={{ y, scale }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-2 max-sm:px-12 max-sm:bg-transparent">
             <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
