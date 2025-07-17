@@ -184,13 +184,13 @@ const page = () => {
         </section>
 
         <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
-          <motion.div style={{ x:xRight }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-xl max-sm:px-15">
+          <motion.div style={{ x:xRight }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-xl max-sm:px-15 max-sm:bg-transparent">
             <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg max-sm:w-xl'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] '>
-          <motion.div style={{ x }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-3 max-sm:px-15">
+          <motion.div style={{ x }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-3 max-sm:px-15 max-sm:bg-transparent">
             <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-3xl max-sm:w-xl'></Image>
           </motion.div>
         </section>
