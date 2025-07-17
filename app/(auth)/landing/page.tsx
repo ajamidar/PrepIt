@@ -138,7 +138,7 @@ const page = () => {
         <hr/>
         
         <div className='bg-gradient-to-b from-[#d9f1fb2f] to-[#fff5cb75] pt-5 pb-5'>
-          <section className='card-cta mb-0 mr-12 ml-12'>
+          <section className='card-cta mb-0 mr-12 ml-12 max-sm:mr-8 max-sm:ml-8'>
             <div className='flex flex-col gap-22'>
                 <div className='flex flex-col gap-1 max-w-lg'>
                     <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
@@ -206,7 +206,7 @@ const page = () => {
         </section>
 
         <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-50'>
-          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-15">
+          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-15 max-sm:ml-10">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-xl'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Choose your ideal techstack from</h1>
@@ -224,7 +224,7 @@ const page = () => {
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Ace your next job Interview</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px'>Boost your knowledge by</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>Boost your knowledge by</h1>
                 <h1 className='text-[#51ff36] text-lg max-sm:text-[15px] font-extrabold'>&nbsp;{display200Count}</h1>
                 <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>%</h1>
               </span>
@@ -236,7 +236,7 @@ const page = () => {
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-1'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px] text-center'>Go above and beyond with</h1>
               <span className='flex flex-row py-0 max-sm:gap-1'>
-                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px'>upto</h1>
+                <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>upto</h1>
                 <h1 className='text-[#51ff36] text-lg max-sm:text-[15px] font-extrabold'>&nbsp;{display10Count}</h1>
                 <h1 className='text-[#FFFFFF] text-lg max-sm:text-[15px]'>+ FREE high quality</h1>
               </span>
