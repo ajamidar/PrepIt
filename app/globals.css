@@ -368,6 +368,10 @@
   .show-card:hover{
     transform: scale(1.05);
     @apply !bg-[#000000b2];
+
+  .gap-190{
+    gap: calc(var(--spacing) * 190);
+  }
   }
 }
 

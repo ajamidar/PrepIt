@@ -125,9 +125,9 @@ const page = () => {
   return (
     <>
       <div className='flex flex-col mt-0 py-0 bg-gradient-to-b from-[#b6e9ff54] to-[#d9f1fb2f]'>
-        <nav className='py-4 px-16 max-sm:px-8 flex flex-row gap-250 justify-center items-center'>
-            <Link href="/" className='flex items-center gap-2 link'>
-              <div className='flex flex-col'>
+        <nav className='py-4 px-16 max-sm:px-8 flex flex-row justify-between items-center'>
+            <Link href="/" className='flex items-center justify-start gap-1 link'>
+              <div className='flex flex-col justify-start'>
                   <div className='flex flex-row gap-1'>
                   <Image src="/logo4.svg" alt="logo" width={50} height={38} />
                   <h1 className='prep-it'>PrepIt</h1>
@@ -139,9 +139,11 @@ const page = () => {
                 </div>
               </div>
             </Link>
-            <Button className='btn-tertiary'>
-              <Link href='/landing/sign-in'>Sign In</Link>
-            </Button>
+            <div className='justify-end'>
+              <Button className='btn-tertiary'>
+                <Link href='/landing/sign-in'>Sign In</Link>
+              </Button>
+            </div>
         </nav>
 
         <hr/>
@@ -214,8 +216,8 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-5 max-sm:overflow-scroll max-sm:pt-0'>
-          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl show-card">
+        <section className='flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-5 max-sm:overflow-hidden max-sm:pt-0'>
+          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7  bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl show-card">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Choose your ideal techstack from</h1>
@@ -228,7 +230,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px]'>from across the globe 🌎🚀</h1>
             </span>
           </motion.div>
-          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:w-3xl show-card">
+          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:w-3xl show-card">
             <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:h-min max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Ace your next job Interview</h1>
@@ -240,7 +242,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px]'>and gain more confidence ⭐✨</h1>
             </span>
           </motion.div>
-          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:mr-5 max-sm:w-3xl show-card">
+          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7  bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:mr-5 max-sm:w-3xl show-card">
             <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Go above and beyond with</h1>
@@ -263,7 +265,7 @@ const page = () => {
           </motion.div>
         </section>
 
-        <motion.section className='flex flex-row justify-center items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pb-5 pt-5'>
+        <motion.section className='flex flex-row justify-center items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pb-5 pt-5 px-2'>
           <motion.div ref={fadeInRef} initial={{ opacity: 0.9, y: 0 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
             <Image src='/sign-up.png' alt='home-page' height={320} width={530} className='rounded-3xl max-sm:w-xl h-[500px] w-[550px] link'></Image>
           </motion.div>
@@ -288,7 +290,7 @@ const page = () => {
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Find Us </h1>
             <h1 className='text-[#ff5375] max-sm:text-[15px] font-extrabold'>Here</h1>
           </span>
-          <div className='flex flex-row pt-20 pb-20 gap-225 justify-center items-center'>
+          <div className='flex flex-row pt-20 pb-20 justify-center gap-190 items-center'>
             <div className='flex flex-col'>
                 <div className='flex flex-row gap-1'>
                   <Image src="/logo4.svg" alt="logo" width={50} height={38} />
