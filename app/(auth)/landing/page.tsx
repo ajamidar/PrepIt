@@ -284,7 +284,7 @@ const page = () => {
         <hr/>
 
         <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#e4e4e46f] to-[#5d5d5d7f] pb-10'>
-          <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
+          <span className='flex flex-row py-0 gap-2.5 mt-10 max-sm:gap-1'>
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Find Us </h1>
             <h1 className='text-[#ff5375] max-sm:text-[15px] font-extrabold'>Here</h1>
           </span>
