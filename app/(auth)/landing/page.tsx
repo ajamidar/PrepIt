@@ -124,20 +124,20 @@ const page = () => {
 
   return (
     <>
-      <div className='flex flex-col mt-0 py-0 mb-30 bg-gradient-to-b from-[#b6e9ff54] to-[#d9f1fb2f]'>
+      <div className='flex flex-col mt-0 py-0 bg-gradient-to-b from-[#b6e9ff54] to-[#d9f1fb2f]'>
         <nav className='py-4 px-16 max-sm:px-8 flex flex-row gap-250 justify-center items-center'>
             <Link href="/" className='flex items-center gap-2 link'>
-            <div className='flex flex-col'>
-                <div className='flex flex-row gap-1'>
-                <Image src="/logo4.svg" alt="logo" width={50} height={38} />
-                <h1 className='prep-it'>PrepIt</h1>
+              <div className='flex flex-col'>
+                  <div className='flex flex-row gap-1'>
+                  <Image src="/logo4.svg" alt="logo" width={50} height={38} />
+                  <h1 className='prep-it'>PrepIt</h1>
+                </div>
+                <div className='flex flex-row'>
+                  <p className='under-root-logo'>World's</p>
+                  <p className='under-root-logo text-[#ffb700] font-bold'>&nbsp;#1</p>
+                  <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
+                </div>
               </div>
-              <div className='flex flex-row'>
-                <p className='under-root-logo'>World's</p>
-                <p className='under-root-logo text-[#ffb700] font-bold'>&nbsp;#1</p>
-                <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
-              </div>
-            </div>
             </Link>
             <Button className='btn-tertiary'>
               <Link href='/landing/sign-in'>Sign In</Link>
@@ -147,7 +147,7 @@ const page = () => {
         <hr/>
         
         <div className='bg-gradient-to-b from-[#d9f1fb2f] to-[#fff5cb75] pt-5 pb-5'>
-          <section className='card-cta mb-0 mr-12 ml-12 max-sm:mr-8 max-sm:ml-8'>
+          <section className='card-cta mb-0 mr-14 ml-14 max-sm:mr-8 max-sm:ml-8'>
             <div className='flex flex-col gap-22'>
                 <div className='flex flex-col gap-1 max-w-lg'>
                     <h2 className='text-extrabold'>HAVE AN INTERVIEW?</h2>
@@ -178,7 +178,7 @@ const page = () => {
             <h1 className='text-black max-sm:text-[17px]'>before</h1>
           </span>
           <motion.div style={{ y, scale }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-2 max-sm:px-12 max-sm:bg-transparent max-sm:mb-4 max-sm:mt-0">
-            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl'></Image>
+            <Image src='/home-page.png' alt='home-page' width={700} height={700} className='rounded-3xl w-2xl max-sm:w-xl link'></Image>
           </motion.div>
         </section>
 
@@ -194,13 +194,13 @@ const page = () => {
 
         <section ref={rightRef} className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
           <motion.div style={{ x:xRight }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-xl max-sm:px-15 max-sm:bg-transparent">
-            <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg max-sm:w-xl'></Image>
+            <Image src='/interview-gen.png' alt='home-page' height={700} width={700} className='rounded-lg max-sm:w-xl link'></Image>
           </motion.div>
         </section>
 
         <section ref={leftRef} className='pb-7 flex flex-col items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] max-sm:pb-1'>
           <motion.div style={{ x }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl mt-3 max-sm:px-15 max-sm:bg-transparent">
-            <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-3xl max-sm:w-xl'></Image>
+            <Image src='/feedback.png' alt='home-page' height={500} width={700} className='rounded-3xl max-sm:w-xl link'></Image>
           </motion.div>
         </section>
 
@@ -214,8 +214,8 @@ const page = () => {
           </motion.div>
         </section>
 
-        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-10 max-sm:overflow-scroll max-sm:pt-0'>
-          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl">
+        <section className='flex flex-row items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pt-6 pb-5 max-sm:overflow-scroll max-sm:pt-0'>
+          <motion.div ref={countRef} className="flex flex-col justify-center items-center p-7 ml-45 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-5 max-sm:w-3xl show-card">
             <Image src='/tech.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Choose your ideal techstack from</h1>
@@ -228,7 +228,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px]'>from across the globe 🌎🚀</h1>
             </span>
           </motion.div>
-          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:w-3xl">
+          <motion.div ref={count200Ref} className="flex flex-col justify-center items-center p-6 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:w-3xl show-card">
             <Image src='/up-graph.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:h-min max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-5 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Ace your next job Interview</h1>
@@ -240,7 +240,7 @@ const page = () => {
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px]'>and gain more confidence ⭐✨</h1>
             </span>
           </motion.div>
-          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:mr-5 max-sm:w-3xl">
+          <motion.div ref={count10Ref} className="flex flex-col justify-center items-center p-7 ml-20 bg-[#000000c9] rounded-xl max-sm:px-2 max-sm:ml-2 max-sm:mr-5 max-sm:w-3xl show-card">
             <Image src='/brain.svg' alt='home-page' height={100} width={100} className='rounded-lg max-sm:w-1/2'></Image>
             <span className='flex flex-col py-0 items-center justify-center gap-1 mt-4 max-sm:gap-0.5'>
               <h1 className='text-[#FFFFFF] text-lg max-sm:text-[5.5px] text-center'>Go above and beyond with</h1>
@@ -255,7 +255,7 @@ const page = () => {
         </section>
 
         <section className='flex flex-col items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f]'>
-          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pb-4 pt-8 mb-2 max-sm:pt-1 max-sm:mt-0">
+          <motion.div className="flex justify-center items-center rounded-2xl mt-1 pt-13 mb-2 max-sm:pt-1 max-sm:mt-0">
           <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Generate your first Interview within seconds</h1>
             <h1 className='text-[#31e505] max-sm:text-[15px] font-extrabold'>NOW</h1>
@@ -263,22 +263,54 @@ const page = () => {
           </motion.div>
         </section>
 
-        <motion.section className='flex flex-row justify-center items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pb-10'>
-          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
-            <Image src='/sign-up.png' alt='home-page' height={350} width={560} className='rounded-3xl max-sm:w-xl'></Image>
+        <motion.section className='flex flex-row justify-center items-center bg-gradient-to-b from-[#aee7ff6f] to-[#fff5cb75] pb-5 pt-5'>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0.9, y: 0 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
+            <Image src='/sign-up.png' alt='home-page' height={320} width={530} className='rounded-3xl max-sm:w-xl h-[500px] w-[550px] link'></Image>
           </motion.div>
-          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 2, ease: 'easeIn' }} className='text-[#333333] px-4'>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0.9, y: 0 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1, ease: 'easeIn' }} className='text-[#333333] px-4'>
             <h3 className='font-bold'>OR</h3>
           </motion.div>
-          <motion.div ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 2.5, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
-            <Image src='/sign-in.png' alt='home-page' height={400} width={600} className='rounded-3xl max-sm:w-xl'></Image>
+          <motion.div ref={fadeInRef} initial={{ opacity: 0.9, y: 0 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1.5, ease: 'easeIn' }} className="flex justify-center items-center p-0.5 bg-[#3333330e] rounded-3xl max-sm:px-15 max-sm:bg-transparent">
+            <Image src='/sign-in.png' alt='home-page' height={400} width={600} className='rounded-3xl max-sm:w-xl h-[500px] w-[550px] link'></Image>
           </motion.div>
         </motion.section>
 
-        <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f] pb-10'>
-          <motion.button ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 3, ease: 'easeIn' }} className='btn-primary'>
+        <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#fff5cb75] to-[#aee7ff6f] pb-15 pt-2'>
+          <motion.button ref={fadeInRef} initial={{ opacity: 0, y: 40 }} animate={isFadeInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1, ease: 'easeIn' }} className='btn-primary'>
             <Link href='/landing/sign-up' className='text-xl'>Get Started</Link>
           </motion.button>
+        </section>
+
+        <hr/>
+
+        <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#e4e4e46f] to-[#5d5d5d7f] pb-10'>
+          <span className='flex flex-row py-0 gap-2.5 mt-9 max-sm:gap-1'>
+            <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Find Us </h1>
+            <h1 className='text-[#ff5375] max-sm:text-[15px] font-extrabold'>Here</h1>
+          </span>
+          <div className='flex flex-row pt-20 pb-20 gap-225 justify-center items-center'>
+            <div className='flex flex-col'>
+                <div className='flex flex-row gap-1'>
+                  <Image src="/logo4.svg" alt="logo" width={50} height={38} />
+                  <h1 className='prep-it'>PrepIt</h1>
+                </div>
+                <div className='flex flex-row'>
+                  <p className='under-root-logo'>World's</p>
+                  <p className='under-root-logo font-bold'>&nbsp;#1</p>
+                  <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
+                </div>
+            </div>
+            <div className='flex flex-col gap-1'>
+              <div className='flex flex-row justify-center items-center gap-0.5'>
+                <Image src='/instagram.svg' width={40} height={40} alt='social media' className='rounded-xl'></Image>
+                <h3 className='font-medium'>@prepit-ai</h3>
+              </div>
+              <div className='flex flex-row justify-center items-center gap-0.5'>
+                <Image src='/X.svg' width={40} height={40} alt='social media' className='rounded-xl'></Image>
+                <h3 className='font-medium'>@prepit-ai</h3>
+              </div>
+            </div>
+          </div>
         </section>
 
       </div>

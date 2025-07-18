@@ -281,7 +281,7 @@
   }
 
   .card-cta {
-    @apply flex flex-row wheat-gradient-white rounded-3xl px-16 py-0 items-center justify-between max-sm:px-5 max-sm:py-5;
+    @apply flex flex-row wheat-gradient-white rounded-3xl px-12 py-0 items-center justify-between max-sm:px-5 max-sm:py-5;
   }
 
   .card-cta{
@@ -359,6 +359,15 @@
 
   .under-root-logo{
     @apply text-[12px] text-[#66615B]
+  }
+
+  .show-card{
+    transition: 0.5s ease;
+  }
+
+  .show-card:hover{
+    transform: scale(1.05);
+    @apply !bg-[#000000b2];
   }
 }
 
