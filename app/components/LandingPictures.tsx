@@ -23,7 +23,7 @@ const LandingPictures = () => {
 
   return (
     <div className='flex justify-center items-center'>
-        <div className="relative w-11/12 h-[550px] max-w-full max-h-full rounded-xl overflow-hidden shadow-lg mt-4 mb-2 bg-gradient-to-b from-[#5c5e5f2f] to-[#bab8b375] max-sm:hidden landing-slideshow">
+        <div className="relative w-11/12 h-[550px] max-w-full max-h-full rounded-4xl overflow-hidden shadow-lg mt-4 mb-2 bg-gradient-to-b from-[#5c5e5f2f] to-[#bab8b375] max-sm:hidden landing-slideshow">
             {images.map((src, index) => (
                 <Image
                 key={index}
