@@ -163,7 +163,7 @@
 @layer components {
   .btn-call {
     @apply inline-block px-7 py-5 font-bold text-lg leading-5 text-white transition-colors duration-150 bg-success-100 border-2 border-[#26d22c] rounded-full shadow-sm focus:outline-none focus:shadow-2xl active:bg-success-200 hover:bg-success-200 min-w-28 cursor-pointer items-center justify-center overflow-visible;
-
+  }
     .span {
       @apply bg-success-100 h-[85%] w-[65%];
     }
@@ -356,7 +356,6 @@
   .root-logo-pic{
     @apply size-[370px];
   }
-
   .under-root-logo{
     @apply text-[12px] text-[#66615B]
   }
@@ -368,12 +367,22 @@
   .show-card:hover{
     transform: scale(1.05);
     @apply !bg-[#000000b2];
+  }
 
   .gap-190{
     gap: calc(var(--spacing) * 190);
   }
+
+  .landing-slideshow{
+    transition: 0.5s ease;
   }
-}
+
+  .landing-slideshow:hover{
+    transform: scale(1.02);
+    @apply bg-gradient-to-b from-[#5c5e5f59] to-[#bab8b394]
+  }
+  
+
 
 @utility dark-gradient {
   @apply bg-gradient-to-b from-[#cce1fa] to-[#60abfb];

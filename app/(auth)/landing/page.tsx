@@ -9,6 +9,7 @@ import { toast } from 'sonner'
 import { motion, useViewportScroll, useTransform, useScroll, useMotionValue, animate, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Bruno_Ace } from 'next/font/google';
+import LandingPictures from '@/app/components/LandingPictures';
 
 
 const page = () => {
@@ -125,8 +126,8 @@ const page = () => {
   return (
     <>
       <div className='flex flex-col mt-0 py-0 bg-gradient-to-b from-[#b6e9ff54] to-[#d9f1fb2f]'>
-        <nav className='py-4 px-16 max-sm:px-8 flex flex-row justify-between items-center'>
-            <Link href="/" className='flex items-center justify-start gap-1 link'>
+        <nav className='py-4 max-sm:px-8 flex flex-row justify-between items-center'>
+            <Link href="/" className='flex items-center justify-start gap-1 link pl-14'>
               <div className='flex flex-col justify-start'>
                   <div className='flex flex-row gap-1'>
                   <Image src="/logo4.svg" alt="logo" width={50} height={38} />
@@ -134,12 +135,12 @@ const page = () => {
                 </div>
                 <div className='flex flex-row'>
                   <p className='under-root-logo'>World's</p>
-                  <p className='under-root-logo text-[#ffb700] font-bold'>&nbsp;#1</p>
+                  <p className='under-root-logo text-[#ffb700]! font-bold'>&nbsp;#1</p>
                   <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
                 </div>
               </div>
             </Link>
-            <div className='justify-end'>
+            <div className='justify-end pr-14'>
               <Button className='btn-tertiary'>
                 <Link href='/landing/sign-in'>Sign In</Link>
               </Button>
@@ -147,6 +148,8 @@ const page = () => {
         </nav>
 
         <hr/>
+
+        <LandingPictures />
         
         <div className='bg-gradient-to-b from-[#d9f1fb2f] to-[#fff5cb75] pt-5 pb-5'>
           <section className='card-cta mb-0 mr-14 ml-14 max-sm:mr-8 max-sm:ml-8'>
@@ -285,13 +288,13 @@ const page = () => {
 
         <hr/>
 
-        <section className='flex flex-col justify-center items-center bg-gradient-to-b from-[#e4e4e46f] to-[#5d5d5d7f] pb-10'>
-          <span className='flex flex-row py-0 gap-2.5 mt-10 max-sm:gap-1'>
+        <section className='flex flex-col px-10 bg-gradient-to-b from-[#e4e4e46f] to-[#5d5d5d7f] pb-10'>
+          <span className='flex flex-row items-center justify-center py-0 gap-2.5 mt-10 max-sm:gap-1'>
             <h1 className='text-[#000000] max-sm:text-[15px] text-center'>Find Us </h1>
             <h1 className='text-[#ff5375] max-sm:text-[15px] font-extrabold'>Here</h1>
           </span>
-          <div className='flex flex-row pt-20 pb-20 justify-center gap-190 items-center'>
-            <div className='flex flex-col'>
+          <div className='flex flex-row pt-20 pb-20 justify-between items-center'>
+            <div className='flex flex-col justify-start'>
                 <div className='flex flex-row gap-1'>
                   <Image src="/logo4.svg" alt="logo" width={50} height={38} />
                   <h1 className='prep-it'>PrepIt</h1>
@@ -302,7 +305,7 @@ const page = () => {
                   <p className='under-root-logo'>&nbsp;AI-Powered Interview preparation tool</p>
                 </div>
             </div>
-            <div className='flex flex-col gap-1'>
+            <div className='flex flex-col gap-1 justify-end'>
               <div className='flex flex-row justify-center items-center gap-0.5'>
                 <Image src='/instagram.svg' width={40} height={40} alt='social media' className='rounded-xl'></Image>
                 <h3 className='font-medium'>@prepit-ai</h3>
