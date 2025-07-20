@@ -3,11 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import React, { ReactNode } from 'react'
+import AccountOrHome from '../components/AccountOrHome'
 
 const RootLayout = async ({ children }: { children: ReactNode}) => {
   const isUserAuthenicated = await isAuthenticated();
 
   if(!isUserAuthenicated) redirect('/landing');
+
+  let isAccountPage = false;
 
   return (
     <div className='root-layout'>
@@ -25,12 +28,7 @@ const RootLayout = async ({ children }: { children: ReactNode}) => {
                 </div>
               </div>
             </Link>
-        <Link href="/account" className='flex items-center link pr-1'>
-          <div className='flex flex-col w-full items-center gap-0.5'>
-            <Image src='/image1.jpeg' alt="user-account" width={50} height={50} className='rounded-full' />
-            <p className='text-[12px] text-black font-medium text-center'>Your Account</p>
-          </div>
-        </Link>
+            <AccountOrHome />
       </nav>
       <hr className='mb-3' />
 
