@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import React, { ReactNode } from 'react'
-import AccountOrHome from '../components/AccountOrHome'
+import AccountOrHome from '../components/NavBar'
+import NavBar from '../components/NavBar'
 
 const RootLayout = async ({ children }: { children: ReactNode}) => {
   const isUserAuthenicated = await isAuthenticated();
@@ -28,7 +29,7 @@ const RootLayout = async ({ children }: { children: ReactNode}) => {
                 </div>
               </div>
             </Link>
-            <AccountOrHome />
+            <NavBar />
       </nav>
       <hr className='mb-3' />
 

@@ -8,12 +8,16 @@ enum AccountPageOrHomePage{
    ACCOUNT = 'ACCOUNT',
 }
 
-const AccountOrHome = () => {
+const NavBar = () => {
 
     const [homeStatus, setHomeStatus] = useState<AccountPageOrHomePage>(AccountPageOrHomePage.HOME);
 
     const handleAccountRedirect = async() => {
         setHomeStatus(AccountPageOrHomePage.ACCOUNT);
+    }
+    
+    const handleHomeRedirect = async() => {
+        setHomeStatus(AccountPageOrHomePage.HOME);
     }
 
     return (
@@ -26,7 +30,7 @@ const AccountOrHome = () => {
           </div>
         </Link>
           : 
-        <Link href="/account" className='flex items-center link pr-1'>
+        <Link href="/" className='flex items-center link pr-1' onClick={handleHomeRedirect}>
           <div className='flex flex-col w-full items-center gap-0.5'>
             <Image src='/image1.jpeg' alt="user-account" width={50} height={50} className='rounded-full' />
             <p className='text-[12px] text-black font-medium text-center'>Home Page</p>
@@ -36,4 +40,4 @@ const AccountOrHome = () => {
     )
 }
 
-export default AccountOrHome
+export default NavBar
