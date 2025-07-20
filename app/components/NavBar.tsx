@@ -46,8 +46,8 @@ const NavBar = () => {
           : 
         <Link href="/" className='flex items-center link pr-1' onClick={handleHomeRedirect}>
           <div className='flex flex-col w-full items-center gap-0.5'>
-            <Image src='/image1.jpeg' alt="user-account" width={50} height={50} className='rounded-full' />
-            <p className='text-[12px] text-black font-medium text-center'>Home Page</p>
+            <Image src='/home-icon.svg' alt="user-account" width={30} height={30} className='rounded-lg' />
+            <p className='text-[12px] text-black font-medium text-center'>Return to Home</p>
           </div>
         </Link>}
       </nav>
