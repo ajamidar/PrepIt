@@ -30,7 +30,7 @@ const Account = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center gap-4 mt-4'>
+        <div className='flex flex-col justify-center items-center gap-4 dark-gradient mt-4 mb-4 py-16 rounded-4xl w-1/2 self-center-safe'>
             <div className='flex flex-col w-full items-center gap-1'>
                 <Image src='/user-avatar.png' alt="user-account" width={50} height={50} className='rounded-full bg-[#333333] p-1' />
                 <div className='flex flex-row gap-1 items-center'>
@@ -40,7 +40,7 @@ const Account = () => {
             </div>
 
             <div className='text-sm text-center'>
-                <p><strong>Email:</strong> {user?.email}</p>
+                <p className='text-black'><strong>Email:</strong> {user?.email}</p>
             </div>
 
             <div className='flex flex-col items-center gap-2'>
