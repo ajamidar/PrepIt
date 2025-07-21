@@ -39,7 +39,7 @@ const NavBar = () => {
             {homeStatus ==  'HOME' ? 
         <Link href="/account" className='flex items-center link pr-1' onClick={handleAccountRedirect}>
           <div className='flex flex-col w-full items-center gap-0.5'>
-            <Image src='/image1.jpeg' alt="user-account" width={50} height={50} className='rounded-full' />
+            <Image src='/user-avatar.png' alt="user-account" width={40} height={40} className='rounded-full bg-[#333333] p-1' />
             <p className='text-[12px] text-black font-medium text-center'>Your Account</p>
           </div>
         </Link>

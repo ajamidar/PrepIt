@@ -5,6 +5,7 @@ import { db } from "@/firebase/admin";
 import { google } from "@ai-sdk/google";
 import { generateObject } from "ai";
 
+
 export async function getInterviewByUserId(userId: string): Promise<Interview[] | null>{
     const interviews = await db.collection('interviews').where('userId', '==', userId).orderBy('createdAt', 'desc').get();
 
@@ -109,6 +110,7 @@ export async function getFeedbackByInterviewId(
   
   return { id: feedbackDoc.id, ...feedbackDoc.data() } as Feedback;
 }
+
 
 //amFtaWRhcmFybmF2QGdtYWlsLmNvbQ:WzZQgCiNI8tdLk0wKDyMT
 
