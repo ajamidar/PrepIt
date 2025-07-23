@@ -162,19 +162,19 @@ const Agent = ({ userName, userId, type, interviewId, feedback }: AgentProps) =>
         <>
             <div className='call-view'>
                 <div className='card-border-interviewer'>
-                  <div className='card-interviewer'>
-                      <div className='avatar'>
+                  <div className='card-interviewer gap-0!'>
+                      <div className='avatar bg-transparent!'>
                           <Image src="/woman-avatar.png" alt="Vapi" width={80} height={95} className='object-cover' />
                           {isSpeaking && <span className='animate-speak'/>}
                       </div>
-                      <h3 className='text-black'>Feedback Analyst</h3>
+                      <h3 className='text-black!'>Feedback Analyst</h3>
                   </div>
                 </div>
 
                 <div className='card-border'>
-                    <div className='card-content'>
-                        <Image src="/image1.jpeg" alt="user avatar" width={540} height={540} className='rounded-full object-cover size-[120px]' />
-                        <h3 className='text-black'>{userName}</h3>
+                    <div className='card-content '>
+                        <Image src="/user-avatar.png" alt="user avatar" width={540} height={540} className='rounded-full object-cover size-[120px] p-5 bg-[#333333]!' />
+                        <h3 className='text-black!'>{userName}</h3>
                     </div>
                 </div>
 
