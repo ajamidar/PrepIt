@@ -29,6 +29,8 @@ const Account = () => {
         setIsUpdating(false);
     };
 
+    let editName = false;
+
     return (
         <div className='flex flex-col justify-center items-center gap-4 dark-gradient mt-4 mb-4 py-16 rounded-4xl w-1/2 self-center-safe'>
             <div className='flex flex-col w-full items-center gap-1'>
@@ -43,6 +45,9 @@ const Account = () => {
                 <p className='text-black text-[20px]'><strong>Email:</strong> {user?.email}</p>
             </div>
 
+            {editName ?
+            "..."
+            : 
             <div className='flex flex-col items-center gap-2'>
                 <label htmlFor='name' className='text-black text-[20px] font-bold'>Edit Name:</label>
                 <input
@@ -59,7 +64,8 @@ const Account = () => {
                 >
                     {isUpdating ? 'Updating...' : 'Update Name'}
                 </button>
-            </div>
+            </div>}
+            
         </div>
     );
 };
