@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { vapi } from '@/lib/vapi.sdk';
 import { interviewer } from '@/constants';
 import { createFeedback } from '@/lib/actions/general.action';
+import { toast } from 'sonner';
 
 
 
@@ -74,7 +75,8 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
       })
 
       if(success && id){
-        router.push(`/interview/${interviewId}/feedback`)
+        toast.success('Feedback is being generated, you will be redirected to the Feedback page shortly!')
+        router.push(`/interview/${interviewId}/feedback`);
       } else {
         console.log('Error saving feedback');
         router.push('/');

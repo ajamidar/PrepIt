@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { vapi } from '@/lib/vapi.sdk';
 import { interviewer } from '@/constants';
+import { toast } from 'sonner';
 
 
 
@@ -124,7 +125,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
 
     const handleDisconnect = async () => {
         setCallStatus(CallStatus.FINISHED);
-
+        toast.success('Redirecting you to the dashboard.');
         vapi.stop();
     } 
 
