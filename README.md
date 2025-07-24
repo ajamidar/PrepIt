@@ -63,7 +63,7 @@ PrepIt is an AI-powered platform designed to help you prepare for job interviews
 
 ## 🚀 Getting Started
 
-> Click [here](prep-it-zeta.vercel.app) to witness the future of interview preparation.
+> Click [here](https://prep-it-zeta.vercel.app) to witness the future of interview preparation.
 
 ---
 
