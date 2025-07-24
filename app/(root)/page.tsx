@@ -7,6 +7,7 @@ import Slideshow from '../components/SlideShow'
 import SmallScreenSlideShow from '../components/SmallScreenSlideshow'
 import { getCurrentUser  } from '@/lib/actions/auth.action'
 import { getInterviewByUserId, getLatestInterviews } from '@/lib/actions/general.action'
+import PopularInterviewsCard from '../components/PopularInterviewsCard'
 
 const page = async () => {
   const user = await getCurrentUser();
@@ -70,7 +71,7 @@ const page = async () => {
         {
         hasUpcomingInterviews ? (
           latestInterviews?.slice(0,6).map((interview) => (
-          <InterviewCard {...interview} key={interview.id} />
+          <PopularInterviewsCard {...interview} key={interview.id} />
         ))) : (
         <p className='text-black'>There are no new interviews available</p>
           )

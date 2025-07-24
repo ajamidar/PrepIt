@@ -9,7 +9,7 @@ import { getCurrentUser } from '@/lib/actions/auth.action';
 import { toast } from 'sonner';
 
 
-const InterviewCard = async ({ id, userId, role, type, techstack, createdAt }: InterviewCardProps) => {
+const PopularInterviewsCard = async ({ id, userId, role, type, techstack, createdAt }: InterviewCardProps) => {
 
     const user = await getCurrentUser();
     const userID = user?.id;
@@ -28,9 +28,6 @@ const InterviewCard = async ({ id, userId, role, type, techstack, createdAt }: I
                 <div>
                     <div className='absolute top-0 right-0 w-fit px-4 py-2 rounded-bl-lg bg-[#2B60DE] flex flex-col gap-0.5 justify-center items-center'>
                         <p className='badge-text text-center'>{normalisedType}</p>
-                        <Link href={`/interview/${id}/delete`}>
-                            <Button className='bg-[#ff6b6b] text-[15px] hover:bg-[#bc7a7a] cursor-pointer'>Delete</Button>
-                        </Link>
                     </div>
                     <Image src={getRandomInterviewCover()} alt="cover-image" width={90} height={90} className='rounded-full object-fit size-[70px]' />
                     <h3 className='mt-5 capitalize text-black'>
@@ -62,4 +59,4 @@ const InterviewCard = async ({ id, userId, role, type, techstack, createdAt }: I
   )
 }
 
-export default InterviewCard
+export default PopularInterviewsCard
