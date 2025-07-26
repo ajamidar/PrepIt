@@ -32,8 +32,8 @@ const InterviewCard = async ({ id, userId, role, type, techstack, createdAt }: I
                             <Button className='bg-[#ff6b6b] text-[15px] hover:bg-[#bc7a7a] cursor-pointer'>Delete</Button>
                         </Link>
                     </div>
-                    <Image src={getRandomInterviewCover()} alt="cover-image" width={90} height={90} className='rounded-full object-fit size-[70px]' />
-                    <h3 className='mt-5 capitalize text-black'>
+                    <Image src='/root-logo2.png' alt="cover-image" width={100} height={100} className='rounded-full object-fill size-[100px]  ' />
+                    <h3 className='mt-2 capitalize text-black'>
                         {role} Interview
                     </h3>
 

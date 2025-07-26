@@ -29,8 +29,8 @@ const PopularInterviewsCard = async ({ id, userId, role, type, techstack, create
                     <div className='absolute top-0 right-0 w-fit px-4 py-2 rounded-bl-lg bg-[#2B60DE] flex flex-col gap-0.5 justify-center items-center'>
                         <p className='badge-text text-center'>{normalisedType}</p>
                     </div>
-                    <Image src={getRandomInterviewCover()} alt="cover-image" width={90} height={90} className='rounded-full object-fit size-[70px]' />
-                    <h3 className='mt-5 capitalize text-black'>
+                    <Image src='/root-logo2.png' alt="cover-image" width={100} height={100} className='rounded-full object-fill size-[100px]  '/>
+                    <h3 className='mt-2 capitalize text-black'>
                         {role} Interview
                     </h3>
 
