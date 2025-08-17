@@ -23,7 +23,7 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-0 p-6 dark-gradient rounded form h-full flex flex-col gap-2 ">
+    <div className="max-w-md mx-auto mt-10 p-6 dark-gradient rounded form h-full flex flex-col gap-2 ">
       <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         <input

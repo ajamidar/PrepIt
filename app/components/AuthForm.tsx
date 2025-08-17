@@ -126,7 +126,7 @@ const AuthForm = ({ type }: {type: FormType}) => {
               
               {isSignIn && 
               <p className='text-black px-3 text-sm'>Forgot Password?
-              <Link href='/sign-in/forgot-password' className='font-semibold text-[#ff1010] hover:text-[#ad5555]'>  Reset Password here</Link>
+              <Link href='/landing/sign-in/forgot-password' className='font-semibold text-[#ff1010] hover:text-[#ad5555]'>  Reset Password here</Link>
               </p>  
               }
             </div>
