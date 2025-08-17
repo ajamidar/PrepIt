@@ -16,7 +16,7 @@ export default function ForgotPassword() {
       await sendPasswordResetEmail(auth, email);
       setMessage("Reset link sent to your email.");
       toast.success('Reset link sent, redirecting you to sign-in')
-      router.push('/sign-in');
+      router.push('/landing/sign-in');
     } catch (error) {
       setMessage(`Error: ${error.message}`);
     }
@@ -38,7 +38,7 @@ export default function ForgotPassword() {
           Send Reset Link
         </button>
       </form>
-      {message && <p className="mt-4 text-l font-bold text-[#22ff00]">{message}</p>}
+      {message && <p className="mt-4 text-l font-bold text-[#fbff00]">{message}</p>}
     </div>
   );
 }
