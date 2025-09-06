@@ -11,6 +11,7 @@ enum EditOrNoEdit{
    NO = 'NO',
 }
 
+// Account handling component
 const Account = () => {
     const [user, setUser] = useState<any>(null);
     const [newName, setNewName] = useState('');
