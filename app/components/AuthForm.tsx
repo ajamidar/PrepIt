@@ -65,7 +65,7 @@ const AuthForm = ({ type }: {type: FormType}) => {
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
-  // 1. Define your form.
+  // Defining the form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -85,8 +85,8 @@ const AuthForm = ({ type }: {type: FormType}) => {
     
     return () => subscription.unsubscribe();
   }, [form.watch]);
- 
-  // 2. Define a submit handler.
+
+  // Defining a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try{
        if(type === 'sign-up'){
